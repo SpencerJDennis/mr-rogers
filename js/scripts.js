@@ -4,22 +4,20 @@ const rogersInput = function(event) {
   let newArray = [];
   console.log(countTo);
   for (let index = 0; index <= countTo; index +=1) {
-    newArray.push(index);
-    rogersStatement()
+    console.log(newArray)
+      if (index === 1) {
+        return "Beep!"
+      } else if (index === 2 || index === 1) {
+        return "Boop!"
+      } else if (index === 3 || index === 2 || index === 1) {
+        return "Won't you be my neighbor?"
+      } else {
+      }
+      newArray.push(index);
+    
+    }
   };
-  }
 
-const rogersStatement = function() {
-  if (index === 1) {
-    return "Beep!"
-  } else if (index === 2 || index === 1) {
-    return "Boop!"
-  } else if (index === 3 || index === 2 || index === 1) {
-    return "Won't you be my neighbor?"
-  } else {
-    return index
-  }
-}
 
   
   window.addEventListener("load", function () {
