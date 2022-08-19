@@ -1,21 +1,27 @@
 const rogersInput = function(event) {
   event.preventDefault();
-  let countTo = parseInt(document.getElementById("input1").value);
-  let newArray = [];
-  console.log(countTo);
-  for (let index = 0; index <= countTo; index +=1) {
-    console.log(newArray)
-      if (index === 1) {
+  let input1 = parseInt(document.getElementById("input1").value);
+  let rogersArray = []
+  console.log(input1);
+  for (let index = 0; index <= input1; index++) {
+    console.log(rogersArray)
+    rogersArray.push(index);
+    console.log(rogersArray)
+    let newRogersArray = []
+    newRoggersArray.push(rogersArray)
+      console.log(newArray)
+      if (newRogersArray.index === 1) {
         return "Beep!"
-      } else if (index === 2 || index === 1) {
+      } else if (newRogersArray.index === 2 || newRogersArray.index === 1) {
         return "Boop!"
-      } else if (index === 3 || index === 2 || index === 1) {
+      } else if (newRogersArray.index === 3 || newRogersArray.indexd === 2 || newRogersArray.index === 1) {
         return "Won't you be my neighbor?"
       } else {
+        return newRogersArray
+       
       }
-      newArray.push(index);
-    
-    }
+      
+    };
   };
 
 
@@ -23,5 +29,4 @@ const rogersInput = function(event) {
   window.addEventListener("load", function () {
     const form = document.getElementById("roger");
     form.addEventListener("submit", rogersInput);
-  }
-  )
+  });
