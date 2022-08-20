@@ -7,10 +7,20 @@ const rogersInput = function(event) {
   for (let index = 0; index <= input1; index++) {
     rogersArray.push(index);
     console.log(rogersArray)
+    replaceRogersNumbers(rogersArray);
+    console.log(rogersArray)
   };
-    rogers = rogersArray.concat(" " + rogersArray.toString([index]) + "!");
-    console.log(rogers)
-  };
+}
+  function replaceRogersNumbers(rogersArray) {
+    let a = 1
+    let b = "bleep!"
+    for (let i = 0; i < rogersArray.length; ++i) {
+      if (rogersArray[i] === a) {
+        return rogersArray[i] = b;
+      }
+    }
+  }
+
   /*let newArray = []
   rogersArray.push(newArray)
   console.log(newArray)
